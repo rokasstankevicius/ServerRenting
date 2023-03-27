@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserData>
+    <id>2</id>
+    <username>Bob</username>
+    <password>bIsTheBestb1</password>
+    <userPackage>
+        <id>2</id>
+        <name>Bronze</name>
+        <price>69.99</price>
+        <dedicatedServers>
+            <id>1</id>
+            <storageSpace>1</storageSpace>
+            <cpu>AMD Ryzen™ 5 PRO 3600</cpu>
+            <ram>32 GB DDR4 3400</ram>
+            <os>Windows Server</os>
+        </dedicatedServers>
+        <cloudServers>
+            <id>1</id>
+            <vCores>2</vCores>
+            <storageSpace>80</storageSpace>
+            <ram>4 GB DDR4 3400</ram>
+        </cloudServers>
+    </userPackage>
+</UserData>

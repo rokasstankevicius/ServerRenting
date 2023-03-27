@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UserData" type="UserDataType"/>
+  <xs:complexType name="dedicatedServersType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="id"/>
+      <xs:element type="xs:byte" name="storageSpace"/>
+      <xs:element type="xs:string" name="cpu"/>
+      <xs:element type="xs:string" name="ram"/>
+      <xs:element type="xs:string" name="os"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cloudServersType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="id"/>
+      <xs:element type="xs:byte" name="vCores"/>
+      <xs:element type="xs:byte" name="storageSpace"/>
+      <xs:element type="xs:string" name="ram"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="userPackageType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="id"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:float" name="price"/>
+      <xs:element type="dedicatedServersType" name="dedicatedServers"/>
+      <xs:element type="cloudServersType" name="cloudServers"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UserDataType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="id"/>
+      <xs:element type="xs:string" name="username"/>
+      <xs:element type="xs:string" name="password"/>
+      <xs:element type="userPackageType" name="userPackage"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

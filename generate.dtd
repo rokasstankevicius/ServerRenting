@@ -1,0 +1,16 @@
+<!DOCTYPE UserData [
+        <!ELEMENT UserData (id|username|password|userPackage)*>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT username (#PCDATA)>
+        <!ELEMENT password (#PCDATA)>
+        <!ELEMENT userPackage (id|name|price|dedicatedServers|cloudServers)*>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>
+        <!ELEMENT dedicatedServers (id|storageSpace|cpu|ram|os)*>
+        <!ELEMENT storageSpace (#PCDATA)>
+        <!ELEMENT cpu (#PCDATA)>
+        <!ELEMENT ram (#PCDATA)>
+        <!ELEMENT os (#PCDATA)>
+        <!ELEMENT cloudServers (id|vCores|storageSpace|ram)*>
+        <!ELEMENT vCores (#PCDATA)>
+        ]>
